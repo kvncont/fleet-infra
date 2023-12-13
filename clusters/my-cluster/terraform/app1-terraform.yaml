@@ -6,7 +6,7 @@ metadata:
 spec:
   interval: 1m
   # approvePlan: auto
-  path: modules/examples
+  path: module/examples
   sourceRef:
     kind: GitRepository
     name: app1
