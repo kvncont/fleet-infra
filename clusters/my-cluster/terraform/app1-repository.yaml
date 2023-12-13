@@ -1,0 +1,10 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: app1
+  namespace: flux-system
+spec:
+  interval: 30s
+  url: https://github.com/kvncont/tf-az-container-apps.git
+  ref:
+    branch: main
