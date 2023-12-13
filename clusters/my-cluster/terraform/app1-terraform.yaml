@@ -11,3 +11,10 @@ spec:
     kind: GitRepository
     name: app1
     namespace: flux-system
+  planOnly: true
+  storeReadablePlan: human
+  backendConfig:
+    disable: true
+  cliConfigSecretRef:
+    name: az-provider
+    namespace: flux-system
