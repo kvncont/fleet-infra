@@ -15,6 +15,8 @@ spec:
   storeReadablePlan: human
   backendConfig:
     disable: true
-  cliConfigSecretRef:
-    name: az-provider
-    namespace: flux-system
+  runnerPodTemplate:
+    spec:
+      envFrom:
+        - secretRef:
+            name: az-credentials
