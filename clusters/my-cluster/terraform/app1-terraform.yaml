@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m
-  # approvePlan: auto
+  approvePlan: auto
   path: module/examples
   sourceRef:
     kind: GitRepository
